@@ -27,6 +27,6 @@ jobs:
         CI: true
     - name: npm run build
       run: |
-        ng build --prod
+        npm run build --prod
       env:
         CI: true
