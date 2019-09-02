@@ -1,0 +1,9 @@
+/* Team */
+
+    Joachim Veulemans
+    Developer Frontend & AI
+    joachim.veulemans@outlook.be
+
+    Ian Angillis
+    Developer Backend
+    ianangillis@gmail.com
