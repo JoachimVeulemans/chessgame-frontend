@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReplayRoutingModule } from './replay-routing.module';
+import { NgModule } from '@angular/core';
 import { ReplayComponent } from './components/replay/replay.component';
+import { ReplayRoutingModule } from './replay-routing.module';
 import { StandardComponentsModule } from 'src/app/standard-components/standard-components';
 
 @NgModule({

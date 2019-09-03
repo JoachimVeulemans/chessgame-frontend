@@ -1,5 +1,5 @@
+import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
 import { ReplayComponent } from './components/replay/replay.component';
 
 const routes: Routes = [
