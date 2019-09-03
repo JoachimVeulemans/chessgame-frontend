@@ -1,34 +1,29 @@
-### STAGE 1: Build ###
+# 1 - Stage 0, "build-stage", based on Node.js, to build and compile the frontend
+FROM tiangolo/node-frontend:10 as build-stage
 
-# We label our stage as ‘builder’
-FROM node:10-alpine as builder
+# 2 - Change working directory
+WORKDIR /app
 
-COPY package.json package-lock.json ./
+# 3 - Copy package.json and package-lock.json to install dependencies
+COPY package*.json /app/
 
-## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
+# 4 - Installl dependencies
+RUN npm install
 
-RUN npm ci && mkdir /ng-app && mv ./node_modules ./ng-app
+# 5 - Copy project to /app directory
+COPY ./ /app/
 
-WORKDIR /ng-app
+# 6 - Define the configuration of the build
+ARG configuration=development
 
-COPY . .
+# 7 - Build the Angular project
+RUN npm run build -- --output-path=./dist/out
 
-## Build the angular app in production mode and store the artifacts in dist folder
+# 8 - Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
+FROM nginx:1.15
 
-RUN npm run ng build -- --prod --output-path=dist
+# 9 - Copy the build output to the nginx-container
+COPY --from=build-stage /app/dist/out/ /usr/share/nginx/html
 
-
-### STAGE 2: Setup ###
-
-FROM nginx:1.14.1-alpine
-
-## Copy our default nginx config
-COPY nginx/default.conf /etc/nginx/conf.d/
-
-## Remove default nginx website
-RUN rm -rf /usr/share/nginx/html/*
-
-## From ‘builder’ stage copy over the artifacts in dist folder to default nginx public folder
-COPY --from=builder /ng-app/dist /usr/share/nginx/html
-
-CMD ["nginx", "-g", "daemon off;"]
+# 10 - Copy the default nginx.conf provided by tiangolo/node-frontend
+COPY --from=build-stage /nginx.conf /etc/nginx/conf.d/default.conf
