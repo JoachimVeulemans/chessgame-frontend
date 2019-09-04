@@ -17,6 +17,10 @@ This repository will focus on the frontend part of the project. This is written 
 
 Navigate to [chessgame.jocawebs.be]([https://chessgame.jocawebs.be](https://chessgame.jocawebs.be/)) to test the website.
 
+## Project Status
+
+Navigate to [Trello]([???]) to view the projects status on Trello.
+
 ## Docker Hub Status
 
 Navigate to [Docker Hub Frontend]([https://chessgame.jocawebs.be](https://cloud.docker.com/u/joachimveulemans/repository/docker/joachimveulemans/chessgame-frontend)) to view the Docker Hub status.
