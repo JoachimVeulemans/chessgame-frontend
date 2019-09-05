@@ -15,7 +15,7 @@ This repository will focus on the frontend part of the project. This is written 
 
 ## Demo
 
-Navigate to [chessgame.jocawebs.be]([https://chessgame.jocawebs.be](https://chessgame.jocawebs.be/)) to test the website.
+Navigate to [chessgame.jocawebs.be](https://chessgame.jocawebs.be) to test the website.
 
 ## Project Status
 
