@@ -23,7 +23,7 @@ Navigate to [Trello]([???]) to view the projects status on Trello.
 
 ## Docker Hub Status
 
-Navigate to [Docker Hub Frontend]([https://chessgame.jocawebs.be](https://cloud.docker.com/u/joachimveulemans/repository/docker/joachimveulemans/chessgame-frontend)) to view the Docker Hub status.
+Navigate to [Docker Hub Frontend](https://hub.docker.com/r/joachimveulemans/chessgame-frontend) to view the Docker Hub status.
 
 ## Running the project locally
 
