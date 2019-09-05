@@ -19,7 +19,7 @@ Navigate to [chessgame.jocawebs.be](https://chessgame.jocawebs.be) to test the w
 
 ## Project Status
 
-Navigate to [Trello]([???]) to view the projects status on Trello.
+Navigate to [Trello]([https://trello.com/b/k8dXRchw/chessproject]) to view the projects status on Trello.
 
 ## Docker Hub Status
 
