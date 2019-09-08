@@ -1,5 +1,4 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Chessboard } from '../data/classes/chessboard';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
@@ -15,9 +14,9 @@ export class ApiService {
 
     constructor(private http: HttpClient) { }
 
-    getChessboard(): Observable<Chessboard> {
+    getChessboard(): Observable<string[]> {
         const url = `${this._backend_url}/chess`;
 
-        return this.http.get<Chessboard>(url, this.optionsWithoutCredentials);
+        return this.http.get<string[]>(url, this.optionsWithoutCredentials);
     }
 }
