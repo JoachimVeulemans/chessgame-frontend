@@ -7,7 +7,6 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { StandardComponentsModule } from './standard-components/standard-components';
 
-
 @NgModule({
     declarations: [
         AppComponent
