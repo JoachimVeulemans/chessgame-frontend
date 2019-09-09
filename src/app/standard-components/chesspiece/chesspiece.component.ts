@@ -1,12 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Chesspiece } from 'src/app/data/classes/chesspieces/chesspiece-abstract';
-import { ChesspieceKing } from 'src/app/data/classes/chesspieces/chesspiece-king';
-import { ChesspieceEmpty } from 'src/app/data/classes/chesspieces/chesspiece-empty';
-import { ChesspieceQueen } from 'src/app/data/classes/chesspieces/chesspiece-queen';
-import { ChesspieceRook } from 'src/app/data/classes/chesspieces/chesspiece-rook';
 import { ChesspieceBishop } from 'src/app/data/classes/chesspieces/chesspiece-bishop';
+import { ChesspieceEmpty } from 'src/app/data/classes/chesspieces/chesspiece-empty';
+import { ChesspieceKing } from 'src/app/data/classes/chesspieces/chesspiece-king';
 import { ChesspieceKnight } from 'src/app/data/classes/chesspieces/chesspiece-knight';
 import { ChesspiecePawn } from 'src/app/data/classes/chesspieces/chesspiece-pawn';
+import { ChesspieceQueen } from 'src/app/data/classes/chesspieces/chesspiece-queen';
+import { ChesspieceRook } from 'src/app/data/classes/chesspieces/chesspiece-rook';
 
 @Component({
     selector: 'app-chesspiece',
