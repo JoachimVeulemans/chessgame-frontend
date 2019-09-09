@@ -1,0 +1,24 @@
+.chessboard {
+    margin: 20px;
+    border: 25px solid var(--chessboard-border-color);
+}
+
+:host ::ng-deep app-chesspiece {
+    position: relative;
+    font-size:50px;
+    display: table-cell;
+    vertical-align:middle;
+}
+
+:host ::ng-deep app-chesspiece:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+:host ::ng-deep tr:nth-child(even) app-chesspiece:nth-child(even), :host ::ng-deep tr:nth-child(odd) app-chesspiece:nth-child(odd) {
+    background-color: var(--chesspiece-even-color);
+}
+:host ::ng-deep tr:nth-child(even) app-chesspiece:nth-child(odd), :host ::ng-deep tr:nth-child(odd) app-chesspiece:nth-child(even) {
+    background-color: var(--chesspiece-uneven-color);
+}

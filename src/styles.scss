@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+}
+
+:root {
+    --primary-color: rgb(0, 172, 215);
+
+    --chessboard-border-color: rgb(98,55,40);
+    --chesspiece-even-color: rgb(245,222,179);
+    --chesspiece-uneven-color: rgb(222,184,135);
+
+}

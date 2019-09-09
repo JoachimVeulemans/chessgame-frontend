@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
-
+import { HttpClient, HttpHandler } from '@angular/common/http';
+import { ChessboardComponent } from '../../../../standard-components/chessboard/chessboard.component';
+import { ChesspieceComponent } from '../../../../standard-components/chesspiece/chesspiece.component';
 import { HomeComponent } from './home.component';
 
 describe('HomeComponent', () => {
@@ -8,7 +10,12 @@ describe('HomeComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [HomeComponent]
+            declarations: [
+                HomeComponent, ChessboardComponent, ChesspieceComponent
+            ],
+            providers: [
+                HttpClient, HttpHandler
+            ]
         })
             .compileComponents();
     }));

@@ -1,5 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './standard-components/navbar/navbar.component';
 import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
@@ -9,7 +10,7 @@ describe('AppComponent', () => {
                 RouterTestingModule
             ],
             declarations: [
-                AppComponent
+                AppComponent, NavbarComponent
             ],
         }).compileComponents();
     }));

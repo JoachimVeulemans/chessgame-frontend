@@ -1,4 +1,4 @@
-name: Karma Tests
+name: Tests
 
 on:
   pull_request:
@@ -28,5 +28,30 @@ jobs:
     - name: npm run test
       run: |
         npm run test
+      env:
+        CI: true
+
+  Vulnerability_Audit:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install
+      run: |
+        npm install
+      env:
+        CI: true
+    - name: npm audit
+      run: |
+        npm audit
       env:
         CI: true

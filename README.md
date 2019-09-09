@@ -1,3 +1,9 @@
+[![Docker Build Status](https://img.shields.io/docker/cloud/build/joachimveulemans/chessgame-frontend)](https://hub.docker.com/r/joachimveulemans/chessgame-frontend/builds)
+[![Docker Automated Status](https://img.shields.io/docker/cloud/automated/joachimveulemans/chessgame-frontend)](https://hub.docker.com/r/joachimveulemans/chessgame-frontend)
+[![Docker Pulls Status](https://img.shields.io/docker/pulls/joachimveulemans/chessgame-frontend)](https://hub.docker.com/r/joachimveulemans/chessgame-frontend)
+[![Docker Stars Status](https://img.shields.io/docker/stars/joachimveulemans/chessgame-frontend)](https://hub.docker.com/r/joachimveulemans/chessgame-frontend)
+[![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/joachimveulemans/chessgame-frontend)](https://github.com/JoachimVeulemans/chessgame-frontend)
+
 # Chessgame Frontend
 
 ## General Summary
