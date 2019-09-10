@@ -5,9 +5,10 @@
 
 :host ::ng-deep app-chesspiece {
     position: relative;
-    font-size:50px;
+    font-size: 50px;
     display: table-cell;
-    vertical-align:middle;
+    vertical-align: middle;
+    width: 0.001%;
 }
 
 :host ::ng-deep app-chesspiece:after {

@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [10.x, 12.x]
 
     steps:
     - uses: actions/checkout@v1
@@ -31,10 +31,10 @@ jobs:
       env:
         CI: true
 
-  build_on_Docker:  
+  build_on_Docker:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag chessgame-frontend:$(date +%s)
+      run: docker build . --file dockerfiles/Dockerfile-chessgame --tag chessgame-frontend:$(date +%s)

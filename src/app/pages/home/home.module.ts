@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './components/home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { NgModule } from '@angular/core';
-import { StandardComponentsModule } from 'src/app/standard-components/standard-components';
+import { StandardComponentsModule } from 'src/app/standard-components/standard-components.module';
 
 @NgModule({
     declarations: [

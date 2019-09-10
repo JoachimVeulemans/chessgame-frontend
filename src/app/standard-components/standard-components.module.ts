@@ -5,6 +5,7 @@ import { FileNotFoundComponent } from './file-not-found/file-not-found.component
 import { LoadingIconComponent } from './loading-icon/loading-icon.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NgModule } from '@angular/core';
+import { PipesModule } from '../pipes/pipes.module';
 
 @NgModule({
     declarations: [
@@ -15,14 +16,16 @@ import { NgModule } from '@angular/core';
         NavbarComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        PipesModule.forRoot()
     ],
     exports: [
         ChessboardComponent,
         ChesspieceComponent,
         FileNotFoundComponent,
         LoadingIconComponent,
-        NavbarComponent
+        NavbarComponent,
+        PipesModule
     ]
 })
 export class StandardComponentsModule { }

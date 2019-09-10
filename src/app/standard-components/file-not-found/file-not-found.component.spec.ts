@@ -1,5 +1,8 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
+import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 import { FileNotFoundComponent } from './file-not-found.component';
+import { PipesModule } from 'src/app/pipes/pipes.module';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('FileNotFoundComponent', () => {
     let component: FileNotFoundComponent;
@@ -7,9 +10,13 @@ describe('FileNotFoundComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [FileNotFoundComponent]
-        })
-            .compileComponents();
+            declarations: [
+                FileNotFoundComponent
+            ],
+            imports: [
+                BrowserDynamicTestingModule, RouterTestingModule, PipesModule
+            ]
+        }).compileComponents();
     }));
 
     beforeEach(() => {

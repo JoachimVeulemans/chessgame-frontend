@@ -6,7 +6,7 @@ import { PlayDualComponent } from './components/play-dual/play-dual.component';
 import { PlayOpponentComponent } from './components/play-opponent/play-opponent.component';
 import { PlayRoutingModule } from './play-routing.module';
 import { PlaySelfComponent } from './components/play-self/play-self.component';
-import { StandardComponentsModule } from 'src/app/standard-components/standard-components';
+import { StandardComponentsModule } from 'src/app/standard-components/standard-components.module';
 
 @NgModule({
     declarations: [

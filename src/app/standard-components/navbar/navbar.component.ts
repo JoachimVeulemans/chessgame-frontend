@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FeatherPipe } from 'src/app/pipes/feather/feather.pipe';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-    constructor(private router: Router) { }
+    constructor(private router: Router, public feather: FeatherPipe) { }
 
     ngOnInit() {
     }
