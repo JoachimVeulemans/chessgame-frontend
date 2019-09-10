@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 import { NavbarComponent } from './navbar.component';
+import { PipesModule } from '../../pipes/pipes.module';
 import { RouterTestingModule } from '@angular/router/testing';
 
 describe('NavbarComponent', () => {
@@ -13,7 +14,7 @@ describe('NavbarComponent', () => {
                 NavbarComponent
             ],
             imports: [
-                BrowserDynamicTestingModule, RouterTestingModule
+                BrowserDynamicTestingModule, RouterTestingModule, PipesModule
             ]
         }).compileComponents();
     }));

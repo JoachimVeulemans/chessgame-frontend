@@ -1,16 +1,16 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { StandardComponentsModule } from './standard-components/standard-components';
+import { PipesModule } from './pipes/pipes.module';
+import { StandardComponentsModule } from './standard-components/standard-components.module';
 
 @NgModule({
-    declarations: [
-        AppComponent
-    ],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -18,13 +18,8 @@ import { StandardComponentsModule } from './standard-components/standard-compone
         BrowserAnimationsModule,
         BrowserModule,
         FormsModule,
-        HttpClientModule
-    ],
-    providers: [
-
-    ],
-    bootstrap: [
-        AppComponent
+        HttpClientModule,
+        PipesModule.forRoot()
     ]
 })
 export class AppModule { }
