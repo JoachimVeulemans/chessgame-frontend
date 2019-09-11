@@ -8,24 +8,31 @@ import { ChesspiecePawn } from 'src/app/data/classes/chesspieces/chesspiece-pawn
 import { ChesspieceQueen } from 'src/app/data/classes/chesspieces/chesspiece-queen';
 import { ChesspieceRook } from 'src/app/data/classes/chesspieces/chesspiece-rook';
 
+/** Defines the selector and location of the HTML & SCSS */
 @Component({
     selector: 'app-chesspiece',
     templateUrl: './chesspiece.component.html',
     styleUrls: ['./chesspiece.component.scss']
 })
 export class ChesspieceComponent implements OnInit {
-
+    /** Variable that holds the type of chesspiece (name) */
     @Input() chesspieceType: string;
+    /** Variable that holds the row of the chesspiece */
     @Input() row: number;
+    /** Variable that holds the column of the chesspiece */
     @Input() column: number;
+    /** Variable that holds the chesspiece object */
     public chesspiece: Chesspiece;
 
+    /** Constructor */
     constructor() { }
 
+    /** Defines what should be done next when the component is created */
     ngOnInit() {
         this.setChesspieceFromString();
     }
 
+    /** Creates a chesspiece object based on the provided type */
     private setChesspieceFromString() {
         const color = this.getColor();
 
@@ -55,6 +62,7 @@ export class ChesspieceComponent implements OnInit {
 
     }
 
+    /** Calculate the color of the chesspiece based on the location (row & column) */
     private getColor() {
         let color = 'white';
 
