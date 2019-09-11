@@ -1,0 +1,18 @@
+{
+    "GENERAL": {
+        "PLATFORM_NAME": "Chessgame"
+    },
+    "NAVBAR": {
+        "HOME": "Home",
+        "PLAY": "Speel",
+        "REPLAY": "Herbekijk",
+        "PROFILE": "Profiel",
+        "GITHUB": "GitHub"
+    },
+    "LANGUAGES": {
+        "BROWSER": "Standard browser language",
+        "nl": "Dutch",
+        "en": "English",
+        "test": "Developer"
+    }
+}

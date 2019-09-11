@@ -1,4 +1,5 @@
 import { TestBed, async } from '@angular/core/testing';
+import { TranslateFakeLoader, TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './standard-components/navbar/navbar.component';
 import { PipesModule } from './pipes/pipes.module';
@@ -8,7 +9,7 @@ describe('AppComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             imports: [
-                RouterTestingModule, PipesModule
+                RouterTestingModule, PipesModule, TranslateModule.forRoot({ loader: { provide: TranslateLoader, useClass: TranslateFakeLoader } })
             ],
             declarations: [
                 AppComponent, NavbarComponent

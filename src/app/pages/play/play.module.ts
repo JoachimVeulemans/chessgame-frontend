@@ -7,6 +7,7 @@ import { PlayOpponentComponent } from './components/play-opponent/play-opponent.
 import { PlayRoutingModule } from './play-routing.module';
 import { PlaySelfComponent } from './components/play-self/play-self.component';
 import { StandardComponentsModule } from 'src/app/standard-components/standard-components.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,8 @@ import { StandardComponentsModule } from 'src/app/standard-components/standard-c
     imports: [
         CommonModule,
         PlayRoutingModule,
-        StandardComponentsModule
+        StandardComponentsModule,
+        TranslateModule
     ],
     exports: [
         PlayComponent

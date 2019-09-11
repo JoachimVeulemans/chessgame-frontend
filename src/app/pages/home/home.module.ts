@@ -3,6 +3,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { NgModule } from '@angular/core';
 import { StandardComponentsModule } from 'src/app/standard-components/standard-components.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
     declarations: [
@@ -11,10 +12,12 @@ import { StandardComponentsModule } from 'src/app/standard-components/standard-c
     imports: [
         CommonModule,
         HomeRoutingModule,
-        StandardComponentsModule
+        StandardComponentsModule,
+        TranslateModule
     ],
     exports: [
-        HomeComponent
+        HomeComponent,
+        TranslateModule
     ]
 })
 export class HomeModule { }

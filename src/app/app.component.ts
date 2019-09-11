@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FadeAnimation } from './data/animations/fade';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 /** Defines the selector, the location of the HTML & SCSS and which animations to use */
 @Component({
@@ -9,9 +10,13 @@ import { RouterOutlet } from '@angular/router';
     styleUrls: ['./app.component.scss'],
     animations: [FadeAnimation]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
     /** Constructor */
-    constructor() { }
+    constructor(private translate: TranslateService) { }
+
+    ngOnInit() {
+        this.translate.use('nl');
+    }
 
     /** Defines when the animation should be triggered */
     getAnimationData(outlet: RouterOutlet) {

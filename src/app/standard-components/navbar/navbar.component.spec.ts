@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
+import { TranslateFakeLoader, TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 import { NavbarComponent } from './navbar.component';
 import { PipesModule } from '../../pipes/pipes.module';
@@ -14,7 +15,7 @@ describe('NavbarComponent', () => {
                 NavbarComponent
             ],
             imports: [
-                BrowserDynamicTestingModule, RouterTestingModule, PipesModule
+                BrowserDynamicTestingModule, RouterTestingModule, PipesModule, TranslateModule.forRoot({ loader: { provide: TranslateLoader, useClass: TranslateFakeLoader } })
             ]
         }).compileComponents();
     }));

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { ReplayComponent } from './components/replay/replay.component';
 import { ReplayRoutingModule } from './replay-routing.module';
 import { StandardComponentsModule } from 'src/app/standard-components/standard-components.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
     declarations: [
@@ -11,10 +12,12 @@ import { StandardComponentsModule } from 'src/app/standard-components/standard-c
     imports: [
         CommonModule,
         ReplayRoutingModule,
-        StandardComponentsModule
+        StandardComponentsModule,
+        TranslateModule
     ],
     exports: [
-        ReplayComponent
+        ReplayComponent,
+        TranslateModule
     ]
 })
 export class ReplayModule { }

@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <a href="javascript:void(0);" (click)="navigate('/')" class="mr-4"><img src="../../../assets/images/logo.png" width="50" height="50" alt="icon" title="Chessgame"></a>
-    <a href="javascript:void(0);" (click)="navigate('/')" class="mr-4"><span [innerHTML]="'home' | feather:16"></span> Home</a>
-    <a href="javascript:void(0);" (click)="navigate('/play')" class="mr-4"><span [innerHTML]="'play' | feather:16"></span> Play</a>
-    <a href="javascript:void(0);" (click)="navigate('/replay')" class="mr-4"><span [innerHTML]="'repeat' | feather:16"></span> Replay</a>
-    <a href="javascript:void(0);" (click)="navigate('/profile')" class="mr-4"><span [innerHTML]="'user' | feather:16"></span> Profile</a>
+    <a href="javascript:void(0);" (click)="navigate('/')" class="mr-4"><span [innerHTML]="'home' | feather:16"></span> {{'NAVBAR.HOME' | translate}}</a>
+    <a href="javascript:void(0);" (click)="navigate('/play')" class="mr-4"><span [innerHTML]="'play' | feather:16"></span> {{'NAVBAR.PLAY' | translate}}</a>
+    <a href="javascript:void(0);" (click)="navigate('/replay')" class="mr-4"><span [innerHTML]="'repeat' | feather:16"></span> {{'NAVBAR.REPLAY' | translate}}</a>
+    <a href="javascript:void(0);" (click)="navigate('/profile')" class="mr-4"><span [innerHTML]="'user' | feather:16"></span> {{'NAVBAR.PROFILE' | translate}}</a>
     <div class="ml-auto"></div>
-    <a href="https://github.com/JoachimVeulemans/chessgame-frontend" target="_blank" class="mr-1 text-light"><span [innerHTML]="'link' | feather:16"></span> GitHub</a>
+    <a href="https://github.com/JoachimVeulemans/chessgame-frontend" target="_blank" class="mr-1 text-light"><span [innerHTML]="'link' | feather:16"></span> {{'NAVBAR.GITHUB' | translate}}</a>
 </nav>

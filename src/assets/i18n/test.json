@@ -1,0 +1,18 @@
+{
+    "GENERAL": {
+        "PLATFORM_NAME": "#"
+    },
+    "NAVBAR": {
+        "HOME": "#",
+        "PLAY": "#",
+        "REPLAY": "#",
+        "PROFILE": "#",
+        "GITHUB": "#"
+    },
+    "LANGUAGES": {
+        "BROWSER": "#",
+        "nl": "#",
+        "en": "#",
+        "test": "#"
+    }
+}
