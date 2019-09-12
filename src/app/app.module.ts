@@ -9,6 +9,9 @@ import { NgModule } from '@angular/core';
 import { PipesModule } from './pipes/pipes.module';
 import { StandardComponentsModule } from './standard-components/standard-components.module';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { LanguageService } from './services/language.service';
+import { AuthService } from './services/auth.service';
+import { AuthGuardService } from './services/auth-guard.service';
 
 /**
  * Required function for Translation (i18n)
@@ -20,6 +23,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
     declarations: [AppComponent],
     bootstrap: [AppComponent],
+    providers: [LanguageService, AuthService, AuthGuardService],
     imports: [
         BrowserModule,
         AppRoutingModule,

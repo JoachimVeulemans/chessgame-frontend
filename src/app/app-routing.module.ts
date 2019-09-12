@@ -1,4 +1,5 @@
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuardService } from './services/auth-guard.service';
 import { FileNotFoundComponent } from './standard-components/file-not-found/file-not-found.component';
 import { LoadingIconComponent } from './standard-components/loading-icon/loading-icon.component';
 import { NgModule } from '@angular/core';
@@ -16,7 +17,7 @@ const routes: Routes = [
     },
     {
         path: 'profile',
-        // canActivate: [AuthGuardService],
+        canActivate: [AuthGuardService],
         loadChildren: './pages/profile/profile.module#ProfileModule'
     },
     {
