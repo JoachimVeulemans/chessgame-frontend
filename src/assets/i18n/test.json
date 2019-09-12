@@ -11,14 +11,21 @@
     },
     "LANGUAGES": {
         "BROWSER": "#",
-        "nl": "#",
-        "en": "#",
-        "test": "#"
+        "NL": "#",
+        "EN": "#",
+        "TEST": "#"
+    },
+    "BUTTONS": {
+        "SAVE": "#",
+        "SAVING": "#",
+        "ERROR": "#",
+        "SUCCESS": "#"
     },
     "PAGES": {
         "PROFILE": {
             "ABOUT_ME": {
                 "TITLE": "About me",
+                "TITLE_HELP": "Id",
                 "FIRSTNAME": "First name",
                 "FIRSTNAME_PLACEHOLDER": "Enter your first name here...",
                 "LASTNAME": "Last name",
@@ -26,19 +33,17 @@
                 "EMAIL": "Email address",
                 "EMAIL_PLACEHOLDER": "Enter your email here...",
                 "EMAIL_HELP": "We'll never share your email with anyone else.",
-                "BIO": "BIO",
+                "BIO": "Bio",
                 "BIO_PLACEHOLDER": "Enter your bio here...",
                 "BIO_HELP": "Tell us a bit about yourself.",
-                "LANGUAGE": "Preferred language",
-                "SAVE": "Save"
+                "LANGUAGE": "Preferred language"
             },
             "PASSWORD": {
                 "TITLE": "Password",
                 "PASSWORD": "Password",
                 "PASSWORD_PLACEHOLDER": "Enter your password here...",
                 "PASSWORD_AGAIN": "Password (again)",
-                "PASSWORD_AGAIN_PLACEHOLDER": "Enter your password here...",
-                "SAVE": "Save"
+                "PASSWORD_AGAIN_PLACEHOLDER": "Enter your password here..."
             },
             "DANGER_ZONE": {
                 "TITLE": "Danger zone",
