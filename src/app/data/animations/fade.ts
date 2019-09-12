@@ -1,5 +1,6 @@
 import { animate, query, style, transition, trigger } from '@angular/animations';
 
+/** Animation that fades from page to page with a leave of 0.25s and an enter of 0.25s */
 export const FadeAnimation =
     trigger('FadeAnimation', [
         transition('* => *', [

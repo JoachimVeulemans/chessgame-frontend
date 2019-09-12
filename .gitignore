@@ -47,3 +47,6 @@ Thumbs.db
 
 # Compodoc generated files
 documentation/
+
+# Tests
+src/tests/

@@ -6,6 +6,7 @@ import { LoadingIconComponent } from './loading-icon/loading-icon.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NgModule } from '@angular/core';
 import { PipesModule } from '../pipes/pipes.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { PipesModule } from '../pipes/pipes.module';
     ],
     imports: [
         CommonModule,
-        PipesModule.forRoot()
+        PipesModule.forRoot(),
+        TranslateModule
     ],
     exports: [
         ChessboardComponent,
@@ -25,7 +27,8 @@ import { PipesModule } from '../pipes/pipes.module';
         FileNotFoundComponent,
         LoadingIconComponent,
         NavbarComponent,
-        PipesModule
+        PipesModule,
+        TranslateModule
     ]
 })
 export class StandardComponentsModule { }

@@ -21,7 +21,9 @@ This repository will focus on the frontend part of the project. This is written 
 
 ## Demo
 
-Navigate to [chessgame.jocawebs.be](https://chessgame.jocawebs.be) to test the website.
+Navigate to [chessgame.jocawebs.be](https://chessgame.jocawebs.be) to view the latest stable version of the website.
+Navigate to [develop.chessgame.jocawebs.be](https://develop.chessgame.jocawebs.be) to view the current beta version of the website.
+Navigate to [documentation.chessgame.jocawebs.be](https://documentation.chessgame.jocawebs.be) to view the documentation.
 
 ## Project Status
 
@@ -30,6 +32,7 @@ Navigate to [Trello]([https://trello.com/b/k8dXRchw/chessproject]) to view the p
 ## Docker Hub Status
 
 Navigate to [Docker Hub Frontend](https://hub.docker.com/r/joachimveulemans/chessgame-frontend) to view the Docker Hub status.
+Navigate to [Docker Hub Documentation](https://hub.docker.com/r/joachimveulemans/chessgame-frontend-documentation) to view the Docker Hub Documentation status.
 
 ## Running the project locally
 
