@@ -1,3 +1,78 @@
-<p>
-  profile works!
-</p>
+<div class="row">
+        <div class="ml-auto"></div>
+        <h1 class="col-6 mt-3">{{'NAVBAR.PROFILE' | translate}}</h1>
+        <div class="ml-auto"></div>
+</div>
+
+<div class="row">
+    <div class="ml-auto"></div>
+    <div class="col-6 mt-3 card">
+        <h4 class="card-title mt-3 mb-0 ml-3">{{'PAGES.PROFILE.ABOUT_ME.TITLE' | translate}}</h4>
+        <form class="card-body" action="javascript:void(0);">
+            <div class="form-row">
+                <div class="col">
+                    <label for="firstname"><span [innerHTML]="'user' | feather:16"></span> {{'PAGES.PROFILE.ABOUT_ME.FIRSTNAME' | translate}}</label>
+                    <input #firstname id="firstname" type="text" class="form-control" placeholder="{{'PAGES.PROFILE.ABOUT_ME.FIRSTNAME_PLACEHOLDER' | translate}}">
+                </div>
+                <div class="col">
+                    <label for="lastname"><span [innerHTML]="'user' | feather:16"></span> {{'PAGES.PROFILE.ABOUT_ME.LASTNAME' | translate}}</label>
+                    <input #lastname id="lastname" type="text" class="form-control" placeholder="{{'PAGES.PROFILE.ABOUT_ME.LASTNAME_PLACEHOLDER' | translate}}">
+                </div>
+            </div>
+            <div class="form-group mt-2">
+                <label for="exampleInputEmail1"><span [innerHTML]="'mail' | feather:16"></span> {{'PAGES.PROFILE.ABOUT_ME.EMAIL' | translate}}</label>
+                <input #email type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="{{'PAGES.PROFILE.ABOUT_ME.EMAIL_PLACEHOLDER' | translate}}">
+                <small id="emailHelp" class="form-text text-muted">{{'PAGES.PROFILE.ABOUT_ME.EMAIL_HELP' | translate}}</small>
+            </div>
+            <div class="form-group">
+                <label for="bio"><span [innerHTML]="'align-left' | feather:16"></span> {{'PAGES.PROFILE.ABOUT_ME.BIO' | translate}}</label>
+                <textarea #bio class="form-control" id="bio" rows="3" placeholder="{{'PAGES.PROFILE.ABOUT_ME.BIO_PLACEHOLDER' | translate}}"></textarea>
+                <small id="bioHelp" class="form-text text-muted">{{'PAGES.PROFILE.ABOUT_ME.BIO_HELP' | translate}}</small>
+            </div>
+            <div class="form-group">
+                <label for="language"><span [innerHTML]="'flag' | feather:16"></span> {{'PAGES.PROFILE.ABOUT_ME.LANGUAGE' | translate}}</label>
+                <select #language class="form-control" id="language">
+                    <!-- TODO: make dynamic -->
+                    <option>Browser language</option>
+                    <option>English</option>
+                    <option>Dutch</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="saveProfile(firstname.value, lastname.value, email.value, bio.value, language.value)"><span [innerHTML]="'save' | feather:16"></span> {{'PAGES.PROFILE.ABOUT_ME.SAVE' | translate}}</button>
+        </form>
+    </div>
+    <div class="ml-auto"></div>
+</div>
+
+<div class="row">
+    <div class="ml-auto"></div>
+    <div class="col-6 mt-3 card">
+        <h4 class="card-title mt-3 mb-0 ml-3">{{'PAGES.PROFILE.PASSWORD.TITLE' | translate}}</h4>
+        <form class="card-body" action="javascript:void(0);">
+            <div class="form-row">
+                <div class="col">
+                    <label for="password"><span [innerHTML]="'lock' | feather:16"></span> {{'PAGES.PROFILE.PASSWORD.PASSWORD' | translate}}</label>
+                    <input #password id="password" type="password" class="form-control" placeholder="{{'PAGES.PROFILE.PASSWORD.PASSWORD_PLACEHOLDER' | translate}}">
+                </div>
+                <div class="col">
+                    <label for="password2"><span [innerHTML]="'lock' | feather:16"></span> {{'PAGES.PROFILE.PASSWORD.PASSWORD_AGAIN' | translate}}</label>
+                    <input #password2 id="password2" type="password" class="form-control" placeholder="{{'PAGES.PROFILE.PASSWORD.PASSWORD_AGAIN_PLACEHOLDER' | translate}}">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3" (click)="savePassword(password.value, password2.value)"><span [innerHTML]="'save' | feather:16"></span> {{'PAGES.PROFILE.PASSWORD.SAVE' | translate}}</button>
+        </form>
+    </div>
+    <div class="ml-auto"></div>
+</div>
+
+<div class="row">
+    <div class="ml-auto"></div>
+    <div class="col-6 mt-3 card border-danger">
+        <h4 class="card-title mt-3 mb-0 ml-3 text-danger">{{'PAGES.PROFILE.DANGER_ZONE.TITLE' | translate}}</h4>
+        <h6 class="card-subtitle mt-2 ml-3 text-muted"><span [innerHTML]="'alert-triangle' | feather:16"></span> {{'PAGES.PROFILE.DANGER_ZONE.SUBTITLE' | translate}}</h6>
+        <form class="card-body" action="javascript:void(0);">
+            <button type="submit" class="btn btn-outline-danger mt-2" (click)="deleteAccount()"><span [innerHTML]="'trash-2' | feather:16"></span> {{'PAGES.PROFILE.DANGER_ZONE.DELETE_ACCOUNT' | translate}}</button>
+        </form>
+    </div>
+    <div class="ml-auto"></div>
+</div>
