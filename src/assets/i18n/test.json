@@ -14,5 +14,37 @@
         "nl": "#",
         "en": "#",
         "test": "#"
+    },
+    "PAGES": {
+        "PROFILE": {
+            "ABOUT_ME": {
+                "TITLE": "About me",
+                "FIRSTNAME": "First name",
+                "FIRSTNAME_PLACEHOLDER": "Enter your first name here...",
+                "LASTNAME": "Last name",
+                "LASTNAME_PLACEHOLDER": "Enter your last name here...",
+                "EMAIL": "Email address",
+                "EMAIL_PLACEHOLDER": "Enter your email here...",
+                "EMAIL_HELP": "We'll never share your email with anyone else.",
+                "BIO": "BIO",
+                "BIO_PLACEHOLDER": "Enter your bio here...",
+                "BIO_HELP": "Tell us a bit about yourself.",
+                "LANGUAGE": "Preferred language",
+                "SAVE": "Save"
+            },
+            "PASSWORD": {
+                "TITLE": "Password",
+                "PASSWORD": "Password",
+                "PASSWORD_PLACEHOLDER": "Enter your password here...",
+                "PASSWORD_AGAIN": "Password (again)",
+                "PASSWORD_AGAIN_PLACEHOLDER": "Enter your password here...",
+                "SAVE": "Save"
+            },
+            "DANGER_ZONE": {
+                "TITLE": "Danger zone",
+                "SUBTITLE": "Warning! These actions are irreversible!",
+                "DELETE_ACCOUNT": "Delete account"
+            }
+        }
     }
 }
