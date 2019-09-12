@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FadeAnimation } from './data/animations/fade';
+import { LanguageService } from './services/language.service';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -12,10 +13,10 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent implements OnInit {
     /** Constructor */
-    constructor(private translate: TranslateService) { }
+    constructor(private translate: TranslateService, private language: LanguageService) { }
 
     ngOnInit() {
-        this.translate.use('nl');
+        this.language.checkLanguage(); // TODO: move this to somewhere when the user is logged in.
     }
 
     /** Defines when the animation should be triggered */
