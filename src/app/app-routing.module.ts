@@ -1,5 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 import { FileNotFoundComponent } from './standard-components/file-not-found/file-not-found.component';
+import { LoadingIconComponent } from './standard-components/loading-icon/loading-icon.component';
 import { NgModule } from '@angular/core';
 
 const routes: Routes = [
@@ -22,6 +23,11 @@ const routes: Routes = [
         path: 'replay',
         // canActivate: [AuthGuardService],
         loadChildren: './pages/replay/replay.module#ReplayModule'
+    },
+    {
+        path: 'loading',
+        // canActivate: [AuthGuardService],
+        component: LoadingIconComponent
     },
     {
         path: '**',
