@@ -26,6 +26,8 @@
             "ABOUT_ME": {
                 "TITLE": "About me",
                 "TITLE_HELP": "Id",
+                "USERNAME": "Username",
+                "USERNAME_PLACEHOLDER": "Enter your username here...",
                 "FIRSTNAME": "First name",
                 "FIRSTNAME_PLACEHOLDER": "Enter your first name here...",
                 "LASTNAME": "Last name",

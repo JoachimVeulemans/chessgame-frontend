@@ -10,6 +10,10 @@
         <h4 aria-describedby="titleHelp" class="card-title mt-3 mb-0 ml-3">{{'PAGES.PROFILE.ABOUT_ME.TITLE' | translate}}</h4>
         <small id="titleHelp" class="form-text text-muted ml-3">{{'PAGES.PROFILE.ABOUT_ME.TITLE_HELP' | translate}}: {{this.user.id}}</small>
         <form class="card-body" action="javascript:void(0);">
+            <div class="form-group mt-2">
+                <label for="username"><span [innerHTML]="'at-sign' | feather:16"></span> {{'PAGES.PROFILE.ABOUT_ME.USERNAME' | translate}}</label>
+                <input required #username type="username" class="form-control" id="username" placeholder="{{'PAGES.PROFILE.ABOUT_ME.USERNAME_PLACEHOLDER' | translate}}" value="{{this.user.username}}">
+            </div>
             <div class="form-row">
                 <div class="col-sm-11 col-md-6">
                     <label for="firstname"><span [innerHTML]="'user' | feather:16"></span> {{'PAGES.PROFILE.ABOUT_ME.FIRSTNAME' | translate}}</label>
@@ -21,8 +25,8 @@
                 </div>
             </div>
             <div class="form-group mt-2">
-                <label for="exampleInputEmail1"><span [innerHTML]="'mail' | feather:16"></span> {{'PAGES.PROFILE.ABOUT_ME.EMAIL' | translate}}</label>
-                <input required #email type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="{{'PAGES.PROFILE.ABOUT_ME.EMAIL_PLACEHOLDER' | translate}}" value="{{this.user.email}}">
+                <label for="email"><span [innerHTML]="'mail' | feather:16"></span> {{'PAGES.PROFILE.ABOUT_ME.EMAIL' | translate}}</label>
+                <input required #email type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="{{'PAGES.PROFILE.ABOUT_ME.EMAIL_PLACEHOLDER' | translate}}" value="{{this.user.email}}">
                 <small id="emailHelp" class="form-text text-muted">{{'PAGES.PROFILE.ABOUT_ME.EMAIL_HELP' | translate}}</small>
             </div>
             <div class="form-group">
@@ -39,7 +43,7 @@
                     <option>Dutch</option>
                 </select>
             </div>
-            <button #profileSaveButton id="profileSaveButton" type="submit" class="btn btn-primary" (click)="saveProfile(firstname.value, lastname.value, email.value, bio.value, language.value, profileSaveButton, profileSavingButton, profileSuccessButton, profileErrorButton)"><span [innerHTML]="'save' | feather:16"></span> {{'BUTTONS.SAVE' | translate}}</button>
+            <button #profileSaveButton id="profileSaveButton" type="submit" class="btn btn-primary" (click)="saveProfile(username.value, firstname.value, lastname.value, email.value, bio.value, language.value, profileSaveButton, profileSavingButton, profileSuccessButton, profileErrorButton)"><span [innerHTML]="'save' | feather:16"></span> {{'BUTTONS.SAVE' | translate}}</button>
             <button #profileSavingButton id="profileSavingButton" disabled type="submit" class="btn btn-primary"><span [innerHTML]="'clock' | feather:16"></span> {{'BUTTONS.SAVING' | translate}}</button>
             <button #profileSuccessButton id="profileSuccessButton" disabled type="submit" class="btn btn-success"><span [innerHTML]="'check-circle' | feather:16"></span> {{'BUTTONS.SUCCESS' | translate}}</button>
             <button #profileErrorButton id="profileErrorButton" disabled type="submit" class="btn btn-danger"><span [innerHTML]="'alert-triangle' | feather:16"></span> {{'BUTTONS.ERROR' | translate}}</button>

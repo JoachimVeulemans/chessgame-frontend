@@ -147,7 +147,7 @@ export class ApiService {
     }
 
     deleteGame(game: Game) {
-        const url = `${this._backend_url}/messages/${game.id}`;
+        const url = `${this._backend_url}/games/${game.id}`;
 
         return this.http.delete(url, this._optionsWithCredentials);
     }
