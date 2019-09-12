@@ -7,9 +7,9 @@ export const environment = {
     /** Setting whether production is active in this environment */
     production: false,
     /** Defines the URL for where API calls to the backend should point */
-    backend_url: 'https://backend.chessgame.jocawebs.be/api',
+    backend_url: 'https://develop.backend.chessgame.jocawebs.be/api',
     /** Defines the URL for where API calls to the ai should point */
-    ai_url: 'https://backend.chessgame.jocawebs.be/api'
+    ai_url: 'https://develop.backend.chessgame.jocawebs.be/api'
 };
 
 /*
@@ -19,4 +19,4 @@ export const environment = {
  * This import should be commented out in production mode because it will have a negative impact
  * on performance if an error is thrown.
  */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+import 'zone.js/dist/zone-error';  // Included with Angular CLI.
