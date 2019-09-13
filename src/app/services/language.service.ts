@@ -9,6 +9,10 @@ import { User } from '../data/classes/User';
 export class LanguageService {
     constructor(private translate: TranslateService, private apiService: ApiService) { }
 
+    getLanguages() {
+        return ['browser', 'en', 'nl', 'fr'];
+    }
+
     checkLanguage(): void {
         this.apiService.getUserMe().subscribe((user: User) => {
             this.switchLanguage(user.language);
