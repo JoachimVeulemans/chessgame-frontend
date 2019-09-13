@@ -31,13 +31,11 @@ export class NavbarComponent implements AfterViewInit {
                 this.checkIfTranslateReady();
             }, 250);
         } else {
-            this.setLanguages();
+            this.setLanguages(document.getElementById('languages'));
         }
     }
 
-    private setLanguages() {
-        const languageContainer = document.getElementById('languages');
-
+    private setLanguages(languageContainer: HTMLElement) {
         this.language.getLanguages().forEach((language) => {
             const element = document.createElement('a');
 
@@ -58,5 +56,17 @@ export class NavbarComponent implements AfterViewInit {
         } else {
             this.language.switchLanguage(language);
         }
+
+        this.reloadLanguages();
+    }
+
+    private reloadLanguages() {
+        const languageContainer = document.getElementById('languages');
+
+        while (languageContainer.firstChild) {
+            languageContainer.removeChild(languageContainer.firstChild);
+        }
+
+        setTimeout(() => { this.setLanguages(languageContainer); }, 1000);
     }
 }
