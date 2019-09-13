@@ -2,19 +2,19 @@
         <div class="row">
           <div class="col-md-3"></div>
             <div class="col-md-6 login-form-1">
-                <h3>Inloggen</h3>
+                <h3>{{'PAGES.LOGIN.TITLE' | translate}}</h3>
                 <form action="javascript:void(0);">
                     <div class="form-group">
-                        <input #username type="text" class="form-control" placeholder="Gebruikersnaam" />
+                        <input #username type="text" class="form-control" placeholder="{{'PAGES.LOGIN.USERNAME_PLACEHOLDER' | translate}}" />
                     </div>
                     <div class="form-group">
-                        <input #password type="password" class="form-control" placeholder="Wachtwoord" />
+                        <input #password type="password" class="form-control" placeholder="{{'PAGES.LOGIN.PASSWORD_PLACEHOLDER' | translate}}" />
                     </div>
                     <div class="form-group">
-                        <input (click)="login(username.value, password.value)" type="submit" class="btnSubmit" value="Login" />
+                        <input (click)="login(username.value, password.value)" type="submit" class="btnSubmit" value="{{'PAGES.LOGIN.LOGIN_BUTTON' | translate}}" />
                     </div>
                     <div class="form-group">
-                        <a href="javascript:void(0);" (click)="registerModalRequested(username.value)" data-toggle="modal" data-target="#register" class="bold">Nog geen account?</a>
+                        <a href="javascript:void(0);" (click)="registerModalRequested(username.value)" data-toggle="modal" data-target="#register" class="bold">{{'PAGES.LOGIN.REGISTER_BUTTON' | translate}}</a>
                     </div>
                 </form>
             </div>
@@ -26,7 +26,7 @@
           <div class="modal-dialog" role="document">
               <div class="modal-content">
                   <div class="modal-header">
-                      <p class="m-0">Registeren</p>
+                      <p class="m-0">{{'PAGES.LOGIN.REGISTER.TITLE' | translate}}</p>
                       <button class="close" type="button" data-dismiss="modal">
                           <span aria-hidden="true"><span [innerHTML]="'x' | feather:16"></span></span>
                       </button>
@@ -36,13 +36,13 @@
                                   <div class="row">
                                       <div class="col-sm-8">
                                           <div class="form-group">
-                                              <label for="usernameR">Gebruikersnaam</label>
-                                              <input #usernameR type="text" (change)="checkUsername(registerButton, usernameR.value)" class="form-control" id="usernameR" placeholder="Typ hier uw gebruikersnaam...">
+                                              <label for="usernameR">{{'PAGES.LOGIN.REGISTER.USERNAME' | translate}}</label>
+                                              <input #usernameR type="text" (change)="checkUsername(registerButton, usernameR.value)" class="form-control" id="usernameR" placeholder="{{'PAGES.LOGIN.REGISTER.USERNAME_PLACEHOLDER' | translate}}">
                                           </div>
                                       </div>
                                       <div class="col-sm-4">
                                           <div class="form-group">
-                                              <label>Beschikbaar</label><br>
+                                              <label>{{'PAGES.LOGIN.REGISTER.AVAILABLE' | translate}}</label><br>
                                               <span *ngIf="usernameAvailable" [innerHTML]="'check-circle' | feather:16"></span>
                                               <span *ngIf="!usernameAvailable" [innerHTML]="'slash' | feather:16"></span>
                                           </div>
@@ -51,28 +51,28 @@
                                   <div class="row">
                                       <div class="col-sm-12">
                                           <div class="form-group">
-                                              <label for="emailR">Email</label>
-                                              <input required #emailR type="text" class="form-control" id="emailR" placeholder="Typ hier uw emailadres...">
+                                              <label for="emailR">{{'PAGES.LOGIN.REGISTER.EMAIL' | translate}}</label>
+                                              <input required #emailR type="text" class="form-control" id="emailR" placeholder="{{'PAGES.LOGIN.REGISTER.EMAIL_PLACEHOLDER' | translate}}">
                                           </div>
                                       </div>
                                   </div>
                                   <div class="row">
                                       <div class="col-sm-6">
                                           <div class="form-group">
-                                              <label for="passwordR">Wachtwoord</label>
-                                              <input #passwordR type="password" class="form-control" id="passwordR" placeholder="Typ hier uw wachtwoord...">
+                                              <label for="passwordR">{{'PAGES.LOGIN.REGISTER.PASSWORD' | translate}}</label>
+                                              <input #passwordR type="password" class="form-control" id="passwordR" placeholder="{{'PAGES.LOGIN.REGISTER.PASSWORD_PLACEHOLDER' | translate}}">
                                           </div>
                                       </div>
                                       <div class="col-sm-6">
                                           <div class="form-group">
-                                              <label for="passwordRNotSend">Wachtwoord opnieuw</label>
-                                              <input #passwordRNotSend type="password" class="form-control" id="passwordRNotSend" placeholder="Typ hier uw wachtwoord...">
+                                              <label for="passwordRNotSend">{{'PAGES.LOGIN.REGISTER.PASSWORD_AGAIN' | translate}}</label>
+                                              <input #passwordRNotSend type="password" class="form-control" id="passwordRNotSend" placeholder="{{'PAGES.LOGIN.REGISTER.PASSWORD_AGAIN_PLACEHOLDER' | translate}}">
                                           </div>
                                       </div>
                                   </div>
                                   <div class="row modal-footer pl-0 pr-2 pb-0 pt-2">
-                                      <button class="btn btn-secondary" data-dismiss="modal"><span [innerHTML]="'x' | feather:16"></span> Annuleren</button>
-                                      <button class="btn btn-primary" (click)="registerComplete(usernameR.value, emailR.value, passwordR.value, passwordRNotSend.value)" id="registerButton" #registerButton><span [innerHTML]="'send' | feather:16"></span> Registreren</button>
+                                      <button class="btn btn-secondary" data-dismiss="modal"><span [innerHTML]="'x' | feather:16"></span> {{'BUTTONS.CANCEL' | translate}}</button>
+                                      <button class="btn btn-primary" (click)="registerComplete(usernameR.value, emailR.value, passwordR.value, passwordRNotSend.value)" id="registerButton" #registerButton><span [innerHTML]="'send' | feather:16"></span> {{'PAGES.LOGIN.REGISTER.REGISTER_BUTTON' | translate}}</button>
                                   </div>
                               </form>
                           </div>

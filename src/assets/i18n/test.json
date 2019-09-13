@@ -13,44 +13,66 @@
         "BROWSER": "#",
         "NL": "#",
         "EN": "#",
+        "FR": "#",
         "TEST": "#"
     },
     "BUTTONS": {
         "SAVE": "#",
         "SAVING": "#",
         "ERROR": "#",
-        "SUCCESS": "#"
+        "SUCCESS": "#",
+        "CANCEL": "#"
     },
     "PAGES": {
         "PROFILE": {
             "ABOUT_ME": {
-                "TITLE": "About me",
-                "TITLE_HELP": "Id",
-                "USERNAME": "Username",
-                "USERNAME_PLACEHOLDER": "Enter your username here...",
-                "FIRSTNAME": "First name",
-                "FIRSTNAME_PLACEHOLDER": "Enter your first name here...",
-                "LASTNAME": "Last name",
-                "LASTNAME_PLACEHOLDER": "Enter your last name here...",
-                "EMAIL": "Email address",
-                "EMAIL_PLACEHOLDER": "Enter your email here...",
-                "EMAIL_HELP": "We'll never share your email with anyone else.",
-                "BIO": "Bio",
-                "BIO_PLACEHOLDER": "Enter your bio here...",
-                "BIO_HELP": "Tell us a bit about yourself.",
-                "LANGUAGE": "Preferred language"
+                "TITLE": "#",
+                "TITLE_HELP": "#",
+                "USERNAME": "#",
+                "USERNAME_PLACEHOLDER": "#",
+                "FIRSTNAME": "#",
+                "FIRSTNAME_PLACEHOLDER": "#",
+                "LASTNAME": "#",
+                "LASTNAME_PLACEHOLDER": "#",
+                "EMAIL": "#",
+                "EMAIL_PLACEHOLDER": "#",
+                "EMAIL_HELP": "#",
+                "BIO": "#",
+                "BIO_PLACEHOLDER": "#",
+                "BIO_HELP": "#",
+                "LANGUAGE": "#"
             },
             "PASSWORD": {
-                "TITLE": "Password",
-                "PASSWORD": "Password",
-                "PASSWORD_PLACEHOLDER": "Enter your password here...",
-                "PASSWORD_AGAIN": "Password (again)",
-                "PASSWORD_AGAIN_PLACEHOLDER": "Enter your password here..."
+                "TITLE": "#",
+                "PASSWORD": "#",
+                "PASSWORD_PLACEHOLDER": "#",
+                "PASSWORD_AGAIN": "#",
+                "PASSWORD_AGAIN_PLACEHOLDER": "#"
             },
             "DANGER_ZONE": {
-                "TITLE": "Danger zone",
-                "SUBTITLE": "Warning! These actions are irreversible!",
-                "DELETE_ACCOUNT": "Delete account"
+                "TITLE": "#",
+                "SUBTITLE": "#",
+                "DELETE_ACCOUNT": "#"
+            }
+        },
+        "LOGIN": {
+            "TITLE": "#",
+            "USERNAME_PLACEHOLDER": "#",
+            "PASSWORD_PLACEHOLDER": "#",
+            "LOGIN_BUTTON": "#",
+            "REGISTER_BUTTON": "#",
+            "REGISTER": {
+                "TITLE": "#",
+                "USERNAME": "#",
+                "USERNAME_PLACEHOLDER": "#",
+                "AVAILABLE": "#",
+                "EMAIL": "#",
+                "EMAIL_PLACEHOLDER": "#",
+                "PASSWORD": "#",
+                "PASSWORD_PLACEHOLDER": "#",
+                "PASSWORD_AGAIN": "#",
+                "PASSWORD_AGAIN_PLACEHOLDER": "#",
+                "REGISTER_BUTTON": "#"
             }
         }
     }

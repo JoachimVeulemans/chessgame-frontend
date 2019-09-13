@@ -1,8 +1,8 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { FeatherPipe } from 'src/app/pipes/feather/feather.pipe';
+import { LanguageService } from 'src/app/services/language.service';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { LanguageService } from 'src/app/services/language.service';
 
 /** Defines the selector and location of the HTML & SCSS */
 @Component({

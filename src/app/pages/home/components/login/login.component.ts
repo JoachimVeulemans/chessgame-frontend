@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
 import { HttpClient } from '@angular/common/http';
 import { User } from 'src/app/data/classes/User';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-login',
@@ -14,7 +15,7 @@ export class LoginComponent {
 
     usernameAvailable = false;
 
-    constructor(private authService: AuthService, private router: Router, private apiService: ApiService, private http: HttpClient) {
+    constructor(private authService: AuthService, private router: Router, private apiService: ApiService, private http: HttpClient, public translate: TranslateService) {
         const sub = this.authService.checkLoggedIn().subscribe((value) => {
             if (value) {
                 sub.unsubscribe();

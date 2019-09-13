@@ -13,13 +13,15 @@
         "BROWSER": "Standard browser language",
         "NL": "Dutch",
         "EN": "English",
+        "FR": "French",
         "TEST": "Developer"
     },
     "BUTTONS": {
         "SAVE": "Save",
         "SAVING": "Saving...",
         "ERROR": "Error!",
-        "SUCCESS": "Success!"
+        "SUCCESS": "Success!",
+        "CANCEL": "Cancel"
     },
     "PAGES": {
         "PROFILE": {
@@ -51,6 +53,26 @@
                 "TITLE": "Danger zone",
                 "SUBTITLE": "Warning! These actions are irreversible!",
                 "DELETE_ACCOUNT": "Delete account"
+            }
+        },
+        "LOGIN": {
+            "TITLE": "Please login below...",
+            "USERNAME_PLACEHOLDER": "Username",
+            "PASSWORD_PLACEHOLDER": "Password",
+            "LOGIN_BUTTON": "Login",
+            "REGISTER_BUTTON": "No account yet?",
+            "REGISTER": {
+                "TITLE": "Register",
+                "USERNAME": "Username",
+                "USERNAME_PLACEHOLDER": "Enter your username here...",
+                "AVAILABLE": "Available",
+                "EMAIL": "Email address",
+                "EMAIL_PLACEHOLDER": "Enter your email here...",
+                "PASSWORD": "Password",
+                "PASSWORD_PLACEHOLDER": "Enter your password here...",
+                "PASSWORD_AGAIN": "Password (again)",
+                "PASSWORD_AGAIN_PLACEHOLDER": "Enter your password here...",
+                "REGISTER_BUTTON": "Register"
             }
         }
     }

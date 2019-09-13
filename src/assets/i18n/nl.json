@@ -13,13 +13,15 @@
         "BROWSER": "Standaard browsertaal",
         "NL": "Nederlands",
         "EN": "Engels",
-        "TEST": "Developer"
+        "FR": "Frans",
+        "TEST": "Ontwikkelaar"
     },
     "BUTTONS": {
         "SAVE": "Opslaan",
         "SAVING": "Opslaan...",
         "ERROR": "Error!",
-        "SUCCESS": "Succes!"
+        "SUCCESS": "Succes!",
+        "CANCEL": "Annuleren"
     },
     "PAGES": {
         "PROFILE": {
@@ -51,6 +53,26 @@
                 "TITLE": "Gevarenzone",
                 "SUBTITLE": "Opgepast! Deze acties zijn onomkeerbaar!",
                 "DELETE_ACCOUNT": "Verwijder account"
+            }
+        },
+        "LOGIN": {
+            "TITLE": "Log onderaan in...",
+            "USERNAME_PLACEHOLDER": "Gebruikersnaam",
+            "PASSWORD_PLACEHOLDER": "Wachtwoord",
+            "LOGIN_BUTTON": "Login",
+            "REGISTER_BUTTON": "Nog geen account?",
+            "REGISTER": {
+                "TITLE": "Registreren",
+                "USERNAME": "Gebruikersnaam",
+                "USERNAME_PLACEHOLDER": "Typ hier je gebruikersnaam...",
+                "AVAILABLE": "Beschikbaarheid",
+                "EMAIL": "Emailadres",
+                "EMAIL_PLACEHOLDER": "Typ hier je email...",
+                "PASSWORD": "Wachtwoord",
+                "PASSWORD_PLACEHOLDER": "Typ hier je wachtwoord...",
+                "PASSWORD_AGAIN": "Wachtwoord (opnieuw)",
+                "PASSWORD_AGAIN_PLACEHOLDER": "Typ hier je wachtwoord...",
+                "REGISTER_BUTTON": "Registreren"
             }
         }
     }
