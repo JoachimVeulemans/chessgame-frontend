@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { AuthService } from 'src/app/services/auth.service';
-import { Router } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
+import { AuthService } from 'src/app/services/auth.service';
+import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User } from 'src/app/data/classes/User';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { User } from 'src/app/data/classes/User';
 
 @Component({
     selector: 'app-login',
@@ -37,8 +37,8 @@ export class LoginComponent {
         this.apiService.getUserSalt(username).subscribe((salt) => {
             this.apiService.login(username, password, salt).subscribe((value) => {
                 if (value) {
-                    this.apiService.loggedin().subscribe((value) => {
-                        if (value) {
+                    this.apiService.loggedin().subscribe((loggedin) => {
+                        if (loggedin) {
                             this.authService.checkLoggedIn();
                             location.reload();
                         } else {

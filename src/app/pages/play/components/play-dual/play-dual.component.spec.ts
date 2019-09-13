@@ -9,8 +9,7 @@ describe('PlayDualComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [PlayDualComponent]
-        })
-            .compileComponents();
+        }).compileComponents();
     }));
 
     beforeEach(() => {

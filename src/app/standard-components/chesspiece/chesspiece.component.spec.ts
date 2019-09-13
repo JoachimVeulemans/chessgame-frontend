@@ -8,8 +8,7 @@ describe('ChesspieceComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [ChesspieceComponent]
-        })
-            .compileComponents();
+        }).compileComponents();
     }));
 
     beforeEach(() => {

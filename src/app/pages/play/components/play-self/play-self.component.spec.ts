@@ -9,8 +9,7 @@ describe('PlaySelfComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [PlaySelfComponent]
-        })
-            .compileComponents();
+        }).compileComponents();
     }));
 
     beforeEach(() => {

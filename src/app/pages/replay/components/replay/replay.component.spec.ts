@@ -8,8 +8,7 @@ describe('ReplayComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [ReplayComponent]
-        })
-            .compileComponents();
+        }).compileComponents();
     }));
 
     beforeEach(() => {

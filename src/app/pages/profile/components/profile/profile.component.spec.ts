@@ -13,8 +13,7 @@ describe('ProfileComponent', () => {
             declarations: [ProfileComponent],
             imports: [TranslateModule.forRoot({ loader: { provide: TranslateLoader, useClass: TranslateFakeLoader } }), PipesModule],
             providers: [HttpClient, HttpHandler]
-        })
-            .compileComponents();
+        }).compileComponents();
     }));
 
     beforeEach(() => {

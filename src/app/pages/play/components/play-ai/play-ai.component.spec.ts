@@ -9,8 +9,7 @@ describe('PlayAiComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [PlayAiComponent]
-        })
-            .compileComponents();
+        }).compileComponents();
     }));
 
     beforeEach(() => {
