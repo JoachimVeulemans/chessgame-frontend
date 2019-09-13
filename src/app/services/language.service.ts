@@ -10,7 +10,7 @@ export class LanguageService {
     constructor(private translate: TranslateService, private apiService: ApiService) { }
 
     getLanguages() {
-        return ['browser', 'en', 'nl', 'fr'];
+        return ['browser', 'en', 'nl', 'fr', 'test'];
     }
 
     checkLanguage(): void {
