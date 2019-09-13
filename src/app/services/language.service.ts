@@ -1,5 +1,5 @@
+import { Injectable, isDevMode } from '@angular/core';
 import { ApiService } from './api.service';
-import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { User } from '../data/classes/User';
 
@@ -10,7 +10,14 @@ export class LanguageService {
     constructor(private translate: TranslateService, private apiService: ApiService) { }
 
     getLanguages() {
-        return ['browser', 'en', 'nl', 'fr', 'test'];
+        let languages = ['browser', 'en', 'nl', 'fr'];
+
+        // Only add 'Developer language' when in development
+        if (isDevMode()) {
+            languages = languages.concat('test');
+        }
+
+        return languages;
     }
 
     checkLanguage(): void {
