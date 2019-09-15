@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FadeAnimation } from './data/animations/fade';
+import { LanguageService } from './services/language.service';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 /** Defines the selector, the location of the HTML & SCSS and which animations to use */
 @Component({
@@ -11,7 +13,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
     /** Constructor */
-    constructor() { }
+    constructor(private translate: TranslateService, private language: LanguageService) {
+        this.language.checkLanguage();
+    }
 
     /** Defines when the animation should be triggered */
     getAnimationData(outlet: RouterOutlet) {
