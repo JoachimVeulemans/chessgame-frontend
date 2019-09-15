@@ -16,8 +16,6 @@ export class AuthService {
 
     /** Method to see if the user is logged in */
     checkLoggedIn(): Observable<boolean> {
-        this.languageService.setBrowserLanguage();
-
         return new Observable<boolean>((observer) => {
             this.apiService.loggedin().subscribe((value) => {
                 if (value) {
