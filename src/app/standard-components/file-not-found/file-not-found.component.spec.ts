@@ -10,12 +10,8 @@ describe('FileNotFoundComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [
-                FileNotFoundComponent
-            ],
-            imports: [
-                BrowserDynamicTestingModule, RouterTestingModule, PipesModule
-            ]
+            declarations: [FileNotFoundComponent],
+            imports: [BrowserDynamicTestingModule, RouterTestingModule, PipesModule]
         }).compileComponents();
     }));
 

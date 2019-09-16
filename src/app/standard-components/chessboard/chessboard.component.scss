@@ -1,6 +1,7 @@
 .chessboard {
     margin: 20px;
     border: 25px solid var(--chessboard-border-color);
+    border-collapse: unset;
 }
 
 :host ::ng-deep app-chesspiece {

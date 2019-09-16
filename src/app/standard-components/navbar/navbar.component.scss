@@ -5,3 +5,19 @@ a {
 .navbar {
     background-color: var(--primary-color);
 }
+
+.dropdown-item {
+    color: black;
+}
+
+.grey {
+    background-color: #545b62;
+    color: #fff !important;
+    border-color: #4e555b;
+}
+
+@media screen and (min-width: 992px) {
+    .grey {
+        display: none;
+    }
+}

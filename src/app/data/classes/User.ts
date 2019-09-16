@@ -22,7 +22,8 @@ export class User {
         this.language = language;
     }
 
-    editProfile(user: User, firstname: string, lastname: string, email: string, bio: string, language: string): User {
+    editProfile(user: User, username: string, firstname: string, lastname: string, email: string, bio: string, language: string): User {
+        user.username = username;
         user.firstname = firstname;
         user.lastname = lastname;
         user.email = email;

@@ -9,14 +9,9 @@ describe('ChessboardComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [
-                ChessboardComponent, ChesspieceComponent
-            ],
-            providers: [
-                HttpClient, HttpHandler
-            ]
-        })
-            .compileComponents();
+            declarations: [ChessboardComponent, ChesspieceComponent],
+            providers: [HttpClient, HttpHandler]
+        }).compileComponents();
     }));
 
     beforeEach(() => {

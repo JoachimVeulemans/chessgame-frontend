@@ -1,9 +1,37 @@
+    <!--<div class="ml-auto"></div>-->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <a href="javascript:void(0);" (click)="navigate('/')" class="mr-4"><img src="../../../assets/images/logo.png" width="50" height="50" alt="icon" title="Chessgame"></a>
-    <a href="javascript:void(0);" (click)="navigate('/')" class="mr-4"><span [innerHTML]="'home' | feather:16"></span> {{'NAVBAR.HOME' | translate}}</a>
-    <a href="javascript:void(0);" (click)="navigate('/play')" class="mr-4"><span [innerHTML]="'play' | feather:16"></span> {{'NAVBAR.PLAY' | translate}}</a>
-    <a href="javascript:void(0);" (click)="navigate('/replay')" class="mr-4"><span [innerHTML]="'repeat' | feather:16"></span> {{'NAVBAR.REPLAY' | translate}}</a>
-    <a href="javascript:void(0);" (click)="navigate('/profile')" class="mr-4"><span [innerHTML]="'user' | feather:16"></span> {{'NAVBAR.PROFILE' | translate}}</a>
-    <div class="ml-auto"></div>
-    <a href="https://github.com/JoachimVeulemans/chessgame-frontend" target="_blank" class="mr-1 text-light"><span [innerHTML]="'link' | feather:16"></span> {{'NAVBAR.GITHUB' | translate}}</a>
-</nav>
+        <a href="javascript:void(0);" (click)="navigate('/')" class="mr-1"><img src="../../../assets/images/icon.png" width="50" height="50" alt="icon" title="Chessgame"></a>
+        <a class="navbar-brand" href="javascript:void(0);" (click)="navigate('/')">{{'GENERAL.PLATFORM_NAME' | translate}}</a>
+        <div class="ml-auto"></div>
+        <a class="btn btn-secondary grey mr-2" role="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span [innerHTML]="'list' | feather:23"></span>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="javascript:void(0);" (click)="navigate('/')" class="mr-4"><span [innerHTML]="'home' | feather:16"></span> {{'NAVBAR.HOME' | translate}}</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0);" (click)="navigate('/play')" class="mr-4"><span [innerHTML]="'play' | feather:16"></span> {{'NAVBAR.PLAY' | translate}}</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0);" (click)="navigate('/replay')" class="mr-4"><span [innerHTML]="'repeat' | feather:16"></span> {{'NAVBAR.REPLAY' | translate}}</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0);" (click)="navigate('/profile')" class="mr-4"><span [innerHTML]="'user' | feather:16"></span> {{'NAVBAR.PROFILE' | translate}}</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/JoachimVeulemans/chessgame-frontend" target="_blank" class="mr-4 text-light"><span [innerHTML]="'link' | feather:16"></span> {{'NAVBAR.GITHUB' | translate}}</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span [innerHTML]="'flag' | feather:16"></span>
+            </a>
+
+            <div id="languages" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink"></div>
+        </div>
+      </nav>

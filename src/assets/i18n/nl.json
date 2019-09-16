@@ -10,45 +10,69 @@
         "GITHUB": "GitHub"
     },
     "LANGUAGES": {
-        "BROWSER": "Standard browser language",
-        "NL": "Dutch",
-        "EN": "English",
-        "TEST": "Developer"
+        "BROWSER": "Standaard browsertaal",
+        "NL": "Nederlands",
+        "EN": "Engels",
+        "FR": "Frans",
+        "TEST": "Ontwikkelaar"
     },
     "BUTTONS": {
-        "SAVE": "Save",
-        "SAVING": "Saving...",
+        "SAVE": "Opslaan",
+        "SAVING": "Opslaan...",
         "ERROR": "Error!",
-        "SUCCESS": "Success!"
+        "SUCCESS": "Succes!",
+        "CANCEL": "Annuleren"
     },
     "PAGES": {
         "PROFILE": {
             "ABOUT_ME": {
-                "TITLE": "About me",
+                "TITLE": "Over mij",
                 "TITLE_HELP": "Id",
-                "FIRSTNAME": "First name",
-                "FIRSTNAME_PLACEHOLDER": "Enter your first name here...",
-                "LASTNAME": "Last name",
-                "LASTNAME_PLACEHOLDER": "Enter your last name here...",
-                "EMAIL": "Email address",
-                "EMAIL_PLACEHOLDER": "Enter your email here...",
-                "EMAIL_HELP": "We'll never share your email with anyone else.",
+                "USERNAME": "Gebruikersnaam",
+                "USERNAME_PLACEHOLDER": "Typ hier je gebruikersnaam...",
+                "FIRSTNAME": "Voornaam",
+                "FIRSTNAME_PLACEHOLDER": "Typ hier je voornaam...",
+                "LASTNAME": "Achternaam",
+                "LASTNAME_PLACEHOLDER": "Typ hier je achternaam...",
+                "EMAIL": "Emailadres",
+                "EMAIL_PLACEHOLDER": "Typ hier je emailadres....",
+                "EMAIL_HELP": "We zullen het nooit met iemand anders delen.",
                 "BIO": "Bio",
-                "BIO_PLACEHOLDER": "Enter your bio here...",
-                "BIO_HELP": "Tell us a bit about yourself.",
-                "LANGUAGE": "Preferred language"
+                "BIO_PLACEHOLDER": "Typ hier je gebruikersnaam...",
+                "BIO_HELP": "Vertel ons een beetje over jezelf.",
+                "LANGUAGE": "Voorkeurstaal"
             },
             "PASSWORD": {
-                "TITLE": "Password",
-                "PASSWORD": "Password",
-                "PASSWORD_PLACEHOLDER": "Enter your password here...",
-                "PASSWORD_AGAIN": "Password (again)",
-                "PASSWORD_AGAIN_PLACEHOLDER": "Enter your password here..."
+                "TITLE": "Wachtwoord",
+                "PASSWORD": "Wachtwoord",
+                "PASSWORD_PLACEHOLDER": "Typ hier je wachtwoord...",
+                "PASSWORD_AGAIN": "Wachtwoord (opnieuw)",
+                "PASSWORD_AGAIN_PLACEHOLDER": "Typ hier je wachtwoord..."
             },
             "DANGER_ZONE": {
-                "TITLE": "Danger zone",
-                "SUBTITLE": "Warning! These actions are irreversible!",
-                "DELETE_ACCOUNT": "Delete account"
+                "TITLE": "Gevarenzone",
+                "SUBTITLE": "Opgepast! Deze acties zijn onomkeerbaar!",
+                "DELETE_ACCOUNT": "Verwijder account"
+            }
+        },
+        "LOGIN": {
+            "TITLE": "Log onderaan in...",
+            "USERNAME_PLACEHOLDER": "Gebruikersnaam",
+            "PASSWORD_PLACEHOLDER": "Wachtwoord",
+            "LOGIN_BUTTON": "Login",
+            "REGISTER_BUTTON": "Nog geen account?",
+            "REGISTER": {
+                "TITLE": "Registreren",
+                "USERNAME": "Gebruikersnaam",
+                "USERNAME_PLACEHOLDER": "Typ hier je gebruikersnaam...",
+                "AVAILABLE": "Beschikbaarheid",
+                "EMAIL": "Emailadres",
+                "EMAIL_PLACEHOLDER": "Typ hier je email...",
+                "PASSWORD": "Wachtwoord",
+                "PASSWORD_PLACEHOLDER": "Typ hier je wachtwoord...",
+                "PASSWORD_AGAIN": "Wachtwoord (opnieuw)",
+                "PASSWORD_AGAIN_PLACEHOLDER": "Typ hier je wachtwoord...",
+                "REGISTER_BUTTON": "Registreren"
             }
         }
     }

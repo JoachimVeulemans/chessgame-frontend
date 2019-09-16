@@ -4,28 +4,32 @@
     },
     "NAVBAR": {
         "HOME": "Home",
-        "PLAY": "Speel",
-        "REPLAY": "Herbekijk",
-        "PROFILE": "Profiel",
+        "PLAY": "Jouer",
+        "REPLAY": "Revoir",
+        "PROFILE": "Profil",
         "GITHUB": "GitHub"
     },
     "LANGUAGES": {
-        "BROWSER": "Standard browser language",
-        "NL": "Dutch",
-        "EN": "English",
-        "TEST": "Developer"
+        "BROWSER": "Langue standard du navigateur",
+        "NL": "Néerlandais",
+        "EN": "Anglais",
+        "FR": "Français",
+        "TEST": "Développeur"
     },
     "BUTTONS": {
-        "SAVE": "Save",
-        "SAVING": "Saving...",
-        "ERROR": "Error!",
-        "SUCCESS": "Success!"
+        "SAVE": "Sauver",
+        "SAVING": "Enregistrer...",
+        "ERROR": "Erreur!",
+        "SUCCESS": "Succès!",
+        "CANCEL": "Annuler"
     },
     "PAGES": {
         "PROFILE": {
             "ABOUT_ME": {
                 "TITLE": "About me",
                 "TITLE_HELP": "Id",
+                "USERNAME": "Username",
+                "USERNAME_PLACEHOLDER": "Enter your username here...",
                 "FIRSTNAME": "First name",
                 "FIRSTNAME_PLACEHOLDER": "Enter your first name here...",
                 "LASTNAME": "Last name",
@@ -49,6 +53,26 @@
                 "TITLE": "Danger zone",
                 "SUBTITLE": "Warning! These actions are irreversible!",
                 "DELETE_ACCOUNT": "Delete account"
+            }
+        },
+        "LOGIN": {
+            "TITLE": "Please login below...",
+            "USERNAME_PLACEHOLDER": "Username",
+            "PASSWORD_PLACEHOLDER": "Password",
+            "LOGIN_BUTTON": "Login",
+            "REGISTER_BUTTON": "No account yet?",
+            "REGISTER": {
+                "TITLE": "Register",
+                "USERNAME": "Username",
+                "USERNAME_PLACEHOLDER": "Enter your username here...",
+                "AVAILABLE": "Available",
+                "EMAIL": "Email address",
+                "EMAIL_PLACEHOLDER": "Enter your email here...",
+                "PASSWORD": "Password",
+                "PASSWORD_PLACEHOLDER": "Enter your password here...",
+                "PASSWORD_AGAIN": "Password (again)",
+                "PASSWORD_AGAIN_PLACEHOLDER": "Enter your password here...",
+                "REGISTER_BUTTON": "Register"
             }
         }
     }

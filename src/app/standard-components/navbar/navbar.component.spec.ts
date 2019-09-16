@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
+import { HttpClient, HttpHandler } from '@angular/common/http';
 import { TranslateFakeLoader, TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 import { NavbarComponent } from './navbar.component';
@@ -11,12 +12,9 @@ describe('NavbarComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [
-                NavbarComponent
-            ],
-            imports: [
-                BrowserDynamicTestingModule, RouterTestingModule, PipesModule, TranslateModule.forRoot({ loader: { provide: TranslateLoader, useClass: TranslateFakeLoader } })
-            ]
+            declarations: [NavbarComponent],
+            imports: [BrowserDynamicTestingModule, RouterTestingModule, PipesModule, TranslateModule.forRoot({ loader: { provide: TranslateLoader, useClass: TranslateFakeLoader } })],
+            providers: [HttpClient, HttpHandler]
         }).compileComponents();
     }));
 

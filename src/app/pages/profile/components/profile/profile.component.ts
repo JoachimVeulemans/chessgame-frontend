@@ -29,10 +29,10 @@ export class ProfileComponent implements OnInit {
         });
     }
 
-    saveProfile(firstname: string, lastname: string, email: string, bio: string, language: string,
+    saveProfile(username: string, firstname: string, lastname: string, email: string, bio: string, language: string,
         profileSave: HTMLButtonElement, profileSaving: HTMLButtonElement, profileSuccess: HTMLButtonElement, profileError: HTMLButtonElement) {
         this.setProfileButtonsStateSaving(profileSave, profileSaving, profileSuccess, profileError);
-        this.user = this.user.editProfile(this.user, firstname, lastname, email, bio, language);
+        this.user = this.user.editProfile(this.user, username, firstname, lastname, email, bio, language);
         this.apiService.editUser(this.user).subscribe(() => {
             console.log('Success!');
             this.setProfileButtonsStateSuccess(profileSave, profileSaving, profileSuccess, profileError);

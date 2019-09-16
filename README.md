@@ -27,7 +27,7 @@ Navigate to [documentation.chessgame.jocawebs.be](https://documentation.chessgam
 
 ## Project Status
 
-Navigate to [Trello]([https://trello.com/b/k8dXRchw/chessproject]) to view the projects status on Trello.
+Navigate to [Trello](https://trello.com/b/k8dXRchw/chessproject) to view the projects status on Trello.
 
 ## Docker Hub Status
 

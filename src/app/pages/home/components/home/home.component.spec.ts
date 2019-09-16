@@ -10,14 +10,9 @@ describe('HomeComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [
-                HomeComponent, ChessboardComponent, ChesspieceComponent
-            ],
-            providers: [
-                HttpClient, HttpHandler
-            ]
-        })
-            .compileComponents();
+            declarations: [HomeComponent, ChessboardComponent, ChesspieceComponent],
+            providers: [HttpClient, HttpHandler]
+        }).compileComponents();
     }));
 
     beforeEach(() => {
