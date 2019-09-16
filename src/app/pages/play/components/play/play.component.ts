@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 /** Defines the selector and location of the HTML & SCSS */
 @Component({
@@ -8,8 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayComponent implements OnInit {
     /** Constructor */
-    constructor() { }
+    constructor(private router: Router) { }
 
     /** Defines what should be done next when the component is created */
     ngOnInit() { }
+
+    /** Navigates to the desired route with the Angular build-in router */
+    navigate(route: string): void {
+        this.router.navigate([route]);
+    }
 }
