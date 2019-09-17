@@ -1,3 +1,10 @@
-<p>
-  play works!
-</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="ml-auto"></div>
+        <button (click)="navigate('/play/opponent')" class="btn btn-primary col-md-2 col-sm-11 m-3"><span [innerHTML]="'users' | feather:100"></span><br><br>Play againts other users</button>
+        <button (click)="navigate('/play/self')" class="btn btn-primary col-md-2 col-sm-11 m-3"><span [innerHTML]="'user' | feather:100"></span><br><br>Play against yourself</button>
+        <button (click)="navigate('/play/dual')" class="btn btn-primary col-md-2 col-sm-11 m-3"><span [innerHTML]="'user-plus' | feather:100"></span><br><br>Play against your friend</button>
+        <button (click)="navigate('/play/ai')" class="btn btn-primary col-md-2 col-sm-11 m-3"><span [innerHTML]="'sliders' | feather:100"></span><br><br>Play against an AI</button>
+        <div class="ml-auto"></div>
+    </div>
+</div>
