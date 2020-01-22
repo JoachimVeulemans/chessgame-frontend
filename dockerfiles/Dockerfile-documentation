@@ -17,7 +17,7 @@ COPY ./ /app/
 RUN npm run generate-docs
 
 # 8 - Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
-FROM nginx:1.15
+FROM nginx:latest
 
 # 9 - Copy the documentation output to the nginx-container
 COPY --from=build-stage /app/documentation/ /usr/share/nginx/html
