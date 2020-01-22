@@ -27,14 +27,14 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build ./dockerfiles/ -f ./dockerfiles/Dockerfile-chessgame -t joachimveulemans-build-test:$(date +%s)
+      run: docker build . -t joachimveulemans-build-test:$(date +%s)
 
   Build-Documentation-Docker:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build ./dockerfiles/ -f ./dockerfiles/Dockerfile-documentation -t joachimveulemans-build-test:$(date +%s)
+      run: docker build . -f ./Dockerfile-documentation -t joachimveulemans-build-test:$(date +%s)
 
   Linting:
     runs-on: ubuntu-latest
