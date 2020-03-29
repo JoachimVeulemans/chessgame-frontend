@@ -1,0 +1,24 @@
+# Angular - Frontend - CD
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Docker@2
+  inputs:
+    containerRegistry: 'DockerHub'
+    repository: 'joachimveulemans/chessgame'
+    command: 'buildAndPush'
+    Dockerfile: 'Dockerfile'
+    tags: 'frontend'
+
+- task: Docker@2
+  inputs:
+    containerRegistry: 'DockerHub'
+    repository: 'joachimveulemans/chessgame'
+    command: 'buildAndPush'
+    Dockerfile: 'Dockerfile-documentation'
+    tags: 'documentation'
