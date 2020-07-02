@@ -33,7 +33,7 @@
     "jquery": "^3.5.1",
     "jshint": "^2.11.1",
     "popper.js": "^1.16.1",
-    "rxjs": "^6.5.5",
+    "rxjs": "^6.6.0",
     "sha.js": "^2.4.11",
     "tslib": "^1.13.0",
     "tslint-eslint-rules": "^5.4.0",
